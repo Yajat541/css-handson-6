@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("./img/img1.jpg");
+    background-size: cover;
+}
+.logo img{
+    margin: 10px;
+   filter: drop-shadow(5px 5px 5px gray);
+}
+.container-1{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar{
+    display: flex;
+    margin: 10px;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 40px;
+}
+.container-2{
+    display: flex;
+}
+
+.right-container{
+    display: grid;
+    grid-template-columns:200px 200px;
+    gap: 30px;
+}
+.box{
+    border-radius: 20px;
+    border: 3px solid black;
+    height: 200px;
+    transform: 0.5s;
+}
+.box, h2 p{
+    text-align: center;
+    color: white;
+    line-height: 30px;
+}
+.box:hover{
+    transform: translateY(-15px);
+}
+.box1{
+    background-image: url('./img/pic-1.png');
+    background-position: center;
+    background-size: cover;
+}
+.box2{
+    background-image: url('./img/pic-2.png');
+    background-position: center;
+    background-size: cover;
+}
+.box3{
+    background-image: url('./img/pic-3.png');
+    background-position: center;
+    background-size: cover;
+}
+.box4{
+    background-image: url('./img/pic-4.png');
+    background-position: center;
+    background-size: cover;
+}
+.left-container{
+    margin-left: 150px;
+    margin-top: 250px;
+}
+.left-container h1{
+    color: white;
+    font-size: 60px;
+}
+.left-container p{
+    color: white;
+    line-height: 32px;
+}
+.left-container button{
+    padding: 10px 60px;
+    border-radius: 20px;
+}
+.right-container{
+    margin-left: 350px;
+    margin-top: 84px;
+}
+
+@media screen and (min-width:500px) and (max-width:900px){
+    .container-2{
+        flex-direction: column;
+    }
+    .left-container{
+        margin: 0%;
+    }
+    ul li{
+        display: block;
+        margin: 0%;
+    }
+    .right-container{
+        grid-template-columns: 300px;
+        justify-content: center;
+        margin: 0%;
+        margin-top: 2%;
+    }
+}
+
+@media screen and (min-width:250px) and (max-width:500px){
+    .container-2{
+        flex-direction: column;
+    }
+    .left-container{
+        margin: 0%;
+    }
+    .navbar{
+        margin-top: 20px;
+    }
+    .navbar-icon{
+        margin-top: -11px;
+    }
+    .navbar-menu{
+        margin-right: 10px;
+    }
+    .navbar-icon{
+        margin-left: 10px;
+    }
+    ul li{
+        display: inline-block;
+        margin: 0%;
+    }
+    .right-container{
+        grid-template-columns: 300px;
+        justify-content: center;
+        margin: 0%;
+        margin-top: 10px;
+    }
+}
